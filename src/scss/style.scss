@@ -1,6 +1,7 @@
 @import "vendor/reset";
 @import "vars";
 @import "mixins";
+@import "fonts";
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -13,9 +14,14 @@ html {
 body {
     background-color: black;
     font-size: 1.4rem;
+    font-family: 'Gilroy-Medium';
     color: white;
 }
 
 img {
     max-width: 100%;
+}
+
+.container {
+    @include container(1160px, 0)
 }
