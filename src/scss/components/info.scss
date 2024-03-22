@@ -1,0 +1,51 @@
+
+
+.info__row {
+    display: grid;
+    gap: 3.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3.2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.info__item {
+    border-radius: 4rem;
+
+    &--info__item--img {
+        grid-column: span 1;
+    }
+
+    &--text-content {
+        grid-column: span 2;
+        padding: 5.4rem 10.1rem;
+        background-color: $light-gray;
+    }
+}
+
+.info__img {
+    display: block;
+    border-radius: 4rem;
+    height: 100%;
+}
+
+.info__item-title {
+    font-size: 3.2rem;
+    line-height: 94%;
+    margin-bottom: 1.8rem;
+}
+
+.info__item-desc {
+    font-size: 1.6rem;
+    line-height: 156%;
+}
+
+.info__item-paragraph {
+    margin-bottom: 1.5rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
