@@ -42,7 +42,8 @@ img {
     font-family: $bold;
 }
 
-@import "components/header";
-@import "components/nav";
-@import "components/intro";
 @import "components/button";
+@import "components/nav";
+@import "components/header";
+@import "components/intro";
+@import "components/benefits";
