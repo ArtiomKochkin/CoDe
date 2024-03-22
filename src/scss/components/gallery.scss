@@ -1,0 +1,35 @@
+.gallery__inner {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas: 
+    "first first second third"
+    "first first fourth fifth";
+}
+
+.gallery__item {
+    cursor: pointer;
+
+    &--first {
+        grid-area: first;
+    }
+    &--second {
+        grid-area: second;
+    }
+    &--third {
+        grid-area: third;
+    }
+    &--fourth {
+        grid-area: fourth;
+    }
+    &--fifth {
+        grid-area: fifth;
+    }
+}
+
+.gallery__img {
+    display: block;
+    border-radius: 3rem;
+}
