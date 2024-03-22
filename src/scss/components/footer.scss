@@ -1,0 +1,61 @@
+.footer__top {
+    @include flex(normal);
+}
+
+.footer__right {
+    width: 60%;
+}
+
+.footer__about {
+    @include flex;
+    margin-bottom: 3.7rem;
+}
+
+.footer__logo {
+    margin-right: 1rem;
+}
+
+.footer__text {
+    font-size: 1.6rem;
+    line-height: 119%;
+    color: $dark-gray;
+}
+
+.footer__right {
+    width: 40%;
+    @include flex(normal);
+}
+
+.footer__phone {
+    margin-bottom: 0.3rem;
+}
+
+.footer__copyright {
+    margin-top: 5.2rem;
+    padding: 2.8rem 0 2.6rem;
+    @include flex;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $gray;
+    }
+}
+
+.footer__copyright-list {
+    @include flex;
+}
+
+.footer__copyright-item {
+    margin-right: 6.4rem;
+
+    &:last-child {
+        margin: 0;
+    }
+}

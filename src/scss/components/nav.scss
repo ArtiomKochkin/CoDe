@@ -4,6 +4,18 @@
     &.show {
         display: block;
     }
+
+    &--column {
+        .nav__list {
+            flex-direction: column;
+            @include flex(normal);
+        }
+        
+        .nav__item {
+            margin-right: 0;
+            margin-bottom: 2.5rem;
+        }
+    }
 }
 
 .nav__list {
@@ -14,7 +26,7 @@
     margin-right: 4.1rem;
 
     &:last-child {
-        margin-right: 0;
+        margin: 0;
     }
 }
 
@@ -23,10 +35,4 @@
     font-family: $regular;
     line-height: 104%;
     color: $dark;
-    text-decoration: none;
-    transition: $linear;
-
-    &:hover {
-        color: $orange;
-    }
 }

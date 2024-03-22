@@ -22,15 +22,29 @@ img {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+    transition: $linear;
+
+    &:hover {
+        color: $orange;
+    }
+}
+
 .container {
     @include container(1160px, 0);
 }
 
 .phone-number {
-    text-decoration: none;
     color: $blue;
     font-size: 1.6rem;
     line-height: 144%;
+}
+
+.email {
+    font-size: 1.6rem;
+    line-height: 144%;
+    color: $dark;
 }
 
 .title {
@@ -49,5 +63,6 @@ img {
 @import "components/benefits";
 @import "components/info";
 @import "components/gallery";
-
-
+@import "components/map";
+@import "components/footer";
+@import "components/socials";

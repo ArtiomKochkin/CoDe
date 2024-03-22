@@ -1,0 +1,34 @@
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials__item {
+    margin-right: 1.6rem;
+    border-radius: 50%;
+    background-color: $dark;
+    transition: $linear;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background-color: $orange;
+    }
+}
+
+.socials__link {
+    display: block;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    position: relative;
+}
+
+.socials__img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
