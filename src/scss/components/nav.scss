@@ -1,0 +1,32 @@
+.nav {
+    display: none;
+
+    &.show {
+        display: block;
+    }
+}
+
+.nav__list {
+    @include flex;
+}
+
+.nav__item {
+    margin-right: 4.1rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.nav__link {
+    font-size: 1.3rem;
+    font-family: $regular;
+    line-height: 104%;
+    color: $dark;
+    text-decoration: none;
+    transition: $linear;
+
+    &:hover {
+        color: $orange;
+    }
+}
