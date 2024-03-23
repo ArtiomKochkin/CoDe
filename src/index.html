@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     @@include('html/head.html', {
-        "title": "Главная"
+        "title": "CoDe - школа программирования"
     })
 <body>
     @@include('html/header.html', {})
@@ -188,19 +188,19 @@
         <section class="gallery">
             <div class="container">
                 <div class="gallery__inner">
-                    <div class="gallery__item gallery__item--first">
+                    <div class="gallery__item gallery__item--first" data-fancybox="gallery" data-src="./img/gallery/gallery-item-1.jpg">
                         <img src="./img/gallery/gallery-item-1.jpg" alt="gallery image 1" class="gallery__img">
                     </div>
-                    <div class="gallery__item gallery__item--second">
+                    <div class="gallery__item gallery__item--second" data-fancybox="gallery" data-src="./img/gallery/gallery-item-2.jpg">
                         <img src="./img/gallery/gallery-item-2.jpg" alt="gallery image 2" class="gallery__img">
                     </div>
-                    <div class="gallery__item gallery__item--third">
+                    <div class="gallery__item gallery__item--third" data-fancybox="gallery" data-src="./img/gallery/gallery-item-3.jpg">
                         <img src="./img/gallery/gallery-item-3.jpg" alt="gallery image 3" class="gallery__img">
                     </div>
-                    <div class="gallery__item gallery__item--fourth">
+                    <div class="gallery__item gallery__item--fourth" data-fancybox="gallery" data-src="./img/gallery/gallery-item-4.jpg">
                         <img src="./img/gallery/gallery-item-4.jpg" alt="gallery image 4" class="gallery__img">
                     </div>
-                    <div class="gallery__item gallery__item--fifth">
+                    <div class="gallery__item gallery__item--fifth" data-fancybox="gallery" data-src="./img/gallery/gallery-item-5.jpg">
                         <img src="./img/gallery/gallery-item-5.jpg" alt="gallery image 5" class="gallery__img">
                     </div>
                 </div>
@@ -248,6 +248,7 @@
         </div>
     </main>
     @@include('html/footer.html', {})
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 </html>
