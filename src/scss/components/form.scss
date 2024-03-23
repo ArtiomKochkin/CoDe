@@ -1,0 +1,52 @@
+.form__field {
+    margin-bottom: 2.4rem;
+
+    &:last-child {
+        margin-bottom: 1.6rem;
+    }
+}
+
+.form__label {
+    display: block;
+    color: $black;
+    font-size: 1.6rem;
+    font-family: $medium;
+    margin-bottom: 1.6rem;
+}
+
+.form__input {
+    border: 1px solid $secondary-gray;
+    border-radius: 1rem;
+    padding: 2.8rem 3rem;
+    width: 100%;
+    transition: $linear;
+    font-family: $regular;
+    font-size: 1.6rem;
+    color: $black;
+    outline: none;
+
+    &::placeholder {
+        font-family: $regular;
+        font-size: 1.6rem;
+        color: $secondary-gray;
+    }
+
+    &:focus {
+        border: 1px solid $orange;
+    }
+
+    &--textarea {
+        height: 12rem;
+        resize: none;
+    }
+}
+
+
+.form__text {
+    font-size: 1.6rem;
+    color: $secondary-gray;
+}
+
+.form__button {
+    margin-top: 2.5rem;
+}

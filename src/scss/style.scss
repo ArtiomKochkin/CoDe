@@ -16,6 +16,10 @@ body {
     font-size: 1.4rem;
     font-family: $regular;
     color: $dark;
+
+    &.no-scroll {
+        overflow-y: hidden;
+    }
 }
 
 img {
@@ -56,6 +60,11 @@ a {
     font-family: $bold;
 }
 
+.accent {
+    color: $orange;
+    font-family: $regular;
+}
+
 @import "components/button";
 @import "components/nav";
 @import "components/header";
@@ -66,3 +75,5 @@ a {
 @import "components/map";
 @import "components/footer";
 @import "components/socials";
+@import "components/modal";
+@import "components/form";
