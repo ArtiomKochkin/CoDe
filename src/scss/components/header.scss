@@ -29,4 +29,66 @@
     &.show {
         display: block;
     }
+
+    @include breakpoint($tablet-sm) {
+        display: block;
+    }
+}
+
+.header__close {
+    cursor: pointer;
+    display: none;
+    position: relative;
+    z-index: 1001;
+
+    &.show {
+        display: block;
+    }
+
+    @include breakpoint($tablet-sm) {
+        display: none;
+    }
+}
+
+.header__nav {
+    display: block;
+
+    &.show {
+        display: flex;
+    }
+
+    @include breakpoint($tablet-sm) {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background-color: $white;
+        padding: 3.2rem 3rem 3.2rem 4.3rem;
+
+        .nav__list {
+            flex-direction: column;
+            align-items: normal;
+            padding-top: 8rem;
+        }
+
+        .nav__item {
+            margin-right: 0;
+            margin-bottom: 1.6rem;
+
+            &--hidden {
+                display: inline;
+            }
+        }
+
+        .nav__link {
+            font-size: 2rem;
+            font-family: $medium;
+            line-height: 100%;
+            color: $dark;
+        }
+    }
 }

@@ -1,9 +1,5 @@
 .nav {
-    display: none;
-
-    &.show {
-        display: block;
-    }
+    display: block;
 
     &--column {
         .nav__list {
@@ -27,6 +23,10 @@
 
     &:last-child {
         margin: 0;
+    }
+
+    &--hidden {
+        display: none;
     }
 }
 

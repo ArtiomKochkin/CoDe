@@ -2,7 +2,7 @@ export default function showMap() {
     const initMap = () => {
         let myMap = new ymaps.Map("map", {
             center: [55.028894, 82.926493],
-            zoom: 15
+            zoom: 16
         });
 
         myMap.geoObjects
