@@ -1,0 +1,49 @@
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    border: none;
+    outline: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: $linear;
+
+    &.slick-prev {
+        left: 2.4rem;
+        background-image: url("../../img/svg/arrows/arrow-prev.svg");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: 50% 50%;
+        border-radius: 50%;
+        height: 37px;
+        width: 37px;
+        background-color: $orange;
+    }
+
+    &.slick-next {
+        right: 2.4rem;
+        background-image: url("../../img/svg/arrows/arrow-next.svg");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: 50% 50%;
+        border-radius: 50%;
+        height: 37px;
+        width: 37px;
+        background-color: $white;
+    }
+    
+    &:hover {
+        background-color: $blue;
+    }
+}

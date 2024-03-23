@@ -30,7 +30,7 @@
         display: block;
     }
 
-    @include breakpoint($tablet-sm) {
+    @include breakpoint($tablet-pt) {
         display: block;
     }
 }
@@ -45,7 +45,7 @@
         display: block;
     }
 
-    @include breakpoint($tablet-sm) {
+    @include breakpoint($tablet-pt) {
         display: none;
     }
 }
@@ -57,7 +57,7 @@
         display: flex;
     }
 
-    @include breakpoint($tablet-sm) {
+    @include breakpoint($tablet-pt) {
         display: none;
         position: fixed;
         left: 0;

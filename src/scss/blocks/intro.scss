@@ -2,17 +2,21 @@
     margin-top: 9.8rem;
 }
 
+.intro__slider {
+    position: relative;
+}
+
 .intro__banner {
     @include flex(normal);
     background-color: $white;
-    padding: 6rem 2.4rem 5.6rem;
+    padding: 6rem 2.4rem 5.6rem 9.8rem;
     border-radius: 7.5rem;
     background: url("../img/intro/bg.jpg") center no-repeat;
     background-size: cover;
 }
 
 .intro__banner-info {
-    max-width: 58%;
+    max-width: 61.5%;
 }
 
 .intro__banner-title {
