@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240324193331">
+    <title>CoDe - школа программирования</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=<3b140827-3adf-40f1-a8e6-f42dc13f8f39&_v=20240324193331>" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20240324193331" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?_v=20240324193331"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js?_v=20240324193331"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240324193331"/>
+</head>
+<body>
+    <header class="header">
+    <div class="container ">
+        <div class="header__inner">
+            <div class="header__left">
+                <div class="header__logo">
+                    <img src="img/logo/logo-header.svg" alt="CoDo" class="header__logo-img">
+                </div>
+                <nav class="header__nav nav" id="header-nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Чему вы научитесь</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Процесс обучения</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Стоимость</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Контакты</a>
+                        </li>
+                        <li class="nav__item nav__item--hidden">
+                            <a href="#!" class="nav__link">Регистрация</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__phone">
+                <a href="tel:+74993489396" class="phone-number">+7 (499) 348 93 96</a>
+            </div>
+            <div class="header__burger" id="burger-menu">
+                <img src="img/svg/burger.svg" alt="">
+            </div>
+            <div class="header__close" id="close-menu">
+                <img src="img/svg/close.svg" alt="">
+            </div>
+        </div>
+    </div>
+</header>
+    <main class="main">
+        <!-- intro -->
+        <section class="intro">
+            <div class="container">
+                <div class="intro__slider">
+                    <div class="intro__banner">
+                        <div class="intro__banner-info">
+                            <h1 class="intro__banner-title title">
+                                Школа <span class="accent">{</span><span class="bold">программирования</span><span class="accent">}</span> для тех, кому нужны реальные навыки, а не просто сертификат                            
+                            </h1>
+                            <p class="intro__banner__text">
+                                Закажите звонок, и наш специалист свяжется с вами в ближайшее время
+                            </p>
+                            <button class="button" type="button" data-modal="form-modal">
+                                Заказать звонок
+                            </button>
+                        </div>
+                        <div class="intro__banner-img-box">
+                            <img src="./img/intro/banners/banner-1.png" alt="Школа {программирования}для тех, кому нужны реальные навыки,
+                            а не просто сертификат" class="intro__banner-img">
+                        </div>
+                    </div>
+                    <div class="intro__banner">
+                        <div class="intro__banner-info">
+                            <h1 class="intro__banner-title title">
+                                Обучение <br> через практику                           
+                            </h1>
+                            <p class="intro__banner__text">
+                                Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.
+                            </p>
+                            <button class="button" type="button" data-modal="form-modal">
+                                Заказать звонок
+                            </button>
+                        </div>
+                        <div class="intro__banner-img-box">
+                            <picture><source srcset="./img/intro/banners/banner-2.webp" type="image/webp"><img src="./img/intro/banners/banner-2.png" alt="Обучение через практику" class="intro__banner-img"></picture>
+                        </div>
+                    </div>
+                    <div class="intro__banner">
+                        <div class="intro__banner-info">
+                            <h1 class="intro__banner-title title">
+                                Весь материал разбит на небольшие уроки                
+                            </h1>
+                            <p class="intro__banner__text">
+                                Теория и практика подаются маленькими порциями. Так вам будет легче усваивать новые знания.
+                            </p>
+                            <button class="button" type="button" data-modal="form-modal">
+                                Заказать звонок
+                            </button>
+                        </div>
+                        <div class="intro__banner-img-box">
+                            <picture><source srcset="./img/intro/banners/banner-3.webp" type="image/webp"><img src="./img/intro/banners/banner-3.png" alt="Весь материал разбит на небольшие уроки" class="intro__banner-img"></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- benefits -->
+        <section class="benefits">
+            <div class="container">
+                <h2 class="benefits__title title">
+                    Обучение в CoDe – это удобно и результативно
+                </h2>
+                <div class="benefits__cards">
+                    <div class="benefits__card">
+                        <img src="./img/benefits/practice.svg" alt="" class="benefits__card-img">
+                        <h5 class="benefits__card-title">
+                            Огромное количество практики
+                        </h5>
+                        <p class="benefits__card-desc">
+                            Более 500 самостоятельных заданий и 20 полноценных больших проектов
+                        </p>
+                    </div>
+                    <div class="benefits__card">
+                        <img src="./img/benefits/methods.svg" alt="Современные методики обучения" class="benefits__card-img">
+                        <h5 class="benefits__card-title">
+                            Современные методики обучения
+                        </h5>
+                        <p class="benefits__card-desc">
+                            Спиральное обучение: 
+                            погружаемся в материал постепенно, виток за витком                            
+                        </p>
+                    </div>
+                    <div class="benefits__card">
+                        <img src="./img/benefits/presentation.svg" alt="Простое и понятное изложение" class="benefits__card-img">
+                        <h5 class="benefits__card-title">
+                            Простое и понятное изложение
+                        </h5>
+                        <p class="benefits__card-desc">
+                            Вместо заумных терминов – примеры из реального мира
+
+                        </p>
+                    </div>
+                    <div class="benefits__card">
+                        <img src="./img/benefits/schedule.svg" alt="Гибкий график занятий" class="benefits__card-img">
+                        <h5 class="benefits__card-title">
+                            Гибкий график занятий
+                        </h5>
+                        <p class="benefits__card-desc">
+                            Учитесь в любое время в удобном 
+                            для вас темпе
+                        </p>
+                    </div>
+                    <div class="benefits__card">
+                        <img src="./img/benefits/feedback.svg" alt="Прямая связь с опытными программистами" class="benefits__card-img">
+                        <h5 class="benefits__card-title">
+                            Прямая связь с опытными программистами
+                        </h5>
+                        <p class="benefits__card-desc">
+                            Задавайте вопросы 
+                            и отправляйте свой код на проверку
+                        </p>
+                    </div>
+                    <div class="benefits__card">
+                        <img src="./img/benefits/payment.svg" alt="Оплата небольшими частями" class="benefits__card-img">
+                        <h5 class="benefits__card-title">
+                            Оплата небольшими частями
+                        </h5>
+                        <p class="benefits__card-desc">
+                            Платите только за тот материал, который сейчас изучаете, 
+                            а не за весь курс сразу
+                        </p>
+                    </div>
+                    <div class="benefits__card">
+                        <img src="./img/benefits/refund.svg" alt=" Быстрый и легкий возврат" class="benefits__card-img">
+                        <h5 class="benefits__card-title">
+                            Быстрый и легкий возврат
+                        </h5>
+                        <p class="benefits__card-desc">
+                            Если передумаете учиться –
+                            вернем деньги за 3 рабочих дня
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- info -->
+        <section class="info">
+            <div class="container">
+                <div class="info__rows">
+                    <div class="info__row">
+                        <div class="info__item info__item--img">
+                            <picture><source srcset="./img/info/support.webp" type="image/webp"><img src="./img/info/support.jpg" alt="Помощь и поддержка" class="info__img"></picture>
+                        </div>
+                        <div class="info__item info__item--text-content">
+                            <h4 class="info__item-title">
+                                Помощь и поддержка
+                            </h4>
+                            <div class="info__item-desc">
+                                <p class="info__item-paragraph">
+                                    Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему наставнику.
+                                </p>
+                                <p class="info__item-paragraph">
+                                    Раз в несколько уроков вы будете получать большое задание, которое нужно будет сдавать на проверку код-ревьюеру. Он внимательно изучит ваш код, найдет ошибки и поможет вам стать лучше. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__row">
+                        <div class="info__item info__item--text-content">
+                            <h4 class="info__item-title">
+                                Методика обучения
+                            </h4>
+                            <div class="info__item-desc">
+                                <p class="info__item-paragraph">
+                                    Весь учебный материал структурирован по принципу «спирального обучения». Сначала вы получаете базовые знания, а затем на каждом витке спирали углубляетесь в изученные темы, доводя их понимание до совершенства. Такой подход упрощает обучение и гарантирует, что вы не пропустите ничего важного.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info__item info__item--img info__item--start">
+                            <picture><source srcset="./img/info/teaching-method.webp" type="image/webp"><img src="./img/info/teaching-method.jpg" alt="Методика обучения" class="info__img"></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- gallery -->
+        <!-- В полный экран использовались те же изображения, т.к. не были предоставлены изображения большего размера -->
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__inner">
+                    <div class="gallery__item gallery__item--first" data-fancybox="gallery" data-src="./img/gallery/gallery-item-1.jpg">
+                        <picture><source srcset="./img/gallery/gallery-item-1.webp" type="image/webp"><img src="./img/gallery/gallery-item-1.jpg" alt="gallery image 1" class="gallery__img"></picture>
+                    </div>
+                    <div class="gallery__item gallery__item--second" data-fancybox="gallery" data-src="./img/gallery/gallery-item-2.jpg">
+                        <picture><source srcset="./img/gallery/gallery-item-2.webp" type="image/webp"><img src="./img/gallery/gallery-item-2.jpg" alt="gallery image 2" class="gallery__img"></picture>
+                    </div>
+                    <div class="gallery__item gallery__item--third" data-fancybox="gallery" data-src="./img/gallery/gallery-item-3.jpg">
+                        <picture><source srcset="./img/gallery/gallery-item-3.webp" type="image/webp"><img src="./img/gallery/gallery-item-3.jpg" alt="gallery image 3" class="gallery__img"></picture>
+                    </div>
+                    <div class="gallery__item gallery__item--fourth" data-fancybox="gallery" data-src="./img/gallery/gallery-item-4.jpg">
+                        <picture><source srcset="./img/gallery/gallery-item-4.webp" type="image/webp"><img src="./img/gallery/gallery-item-4.jpg" alt="gallery image 4" class="gallery__img"></picture>
+                    </div>
+                    <div class="gallery__item gallery__item--fifth" data-fancybox="gallery" data-src="./img/gallery/gallery-item-5.jpg">
+                        <picture><source srcset="./img/gallery/gallery-item-5.webp" type="image/webp"><img src="./img/gallery/gallery-item-5.jpg" alt="gallery image 5" class="gallery__img"></picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- map -->
+        <div class="map">
+            <div class="container">
+                <div class="map__inner" id="map"></div>
+            </div>
+        </div>
+
+        <!-- feedback form -->
+        <div class="modal" id="form-modal"> 
+            <div class="container">
+                <div class="modal__content modal__content--form">
+                    <div class="modal__close">
+                        <img src="./img/svg/close.svg" alt="">
+                    </div>
+                    <h3 class="modal__title title">Заказать звонок</h3>
+                    <form action="/" class="modal__form form">
+                        <div class="form__field">
+                            <label for="name" class="label">Имя</label>
+                            <input type="text" id="name" class="input" placeholder="Ваше имя">
+                        </div>
+                        <div class="form__field">
+                            <label for="tel" class="label">Телефон</label>
+                            <input type="tel" id="tel" class="input" placeholder="+7 ХХХ - ХХХ - ХХ - ХХ">
+                        </div>
+                        <div class="form__field">
+                            <label for="email" class="label">Имя</label>
+                            <input type="email" id="email" class="input" placeholder="mail@site.com">
+                        </div>
+                        <div class="form__field">
+                            <label for="message" class="label">Сообщение</label>
+                            <textarea id="message" class="input input--textarea" placeholder="Ваше сообщение"></textarea>
+                        </div>
+                        <div class="form__text">
+                            Нажимая кнопку "Отправить", соглашаюсь с <span class="accent">политикой конфиденциальности</span>
+                        </div>
+                        <button class="form__button button" type="submit">
+                            Заказать звонок
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__left">
+                <div class="footer__about">
+                    <div class="footer__logo">
+                        <img src="img/logo/logo-footer.svg" alt="CoDo" class="footer__logo-img">
+                    </div>
+                    <div class="footer__text">
+                        Школа
+                        <br> 
+                        программирования
+                    </div>
+                </div>
+                <ul class="footer__socials socials">
+                    <li class="socials__item">
+                        <a href="#!" class="socials__link">
+                            <img src="img/svg/socials/instagram.svg" alt="instagram" class="socials__img">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#!" class="socials__link">
+                            <img src="img/svg/socials/vk.svg" alt="vk" class="socials__img">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#!" class="socials__link">
+                            <img src="img/svg/socials/facebook.svg" alt="facebook" class="socials__img">
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#!" class="socials__link">
+                            <img src="img/svg/socials/youtube.svg" alt="youtube" class="socials__img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__right">
+                <nav class="footer__nav nav nav--column">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Чему вы научитесь</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Процесс обучения</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Стоимость</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link">Регистрация</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__contacts">
+                    <div class="footer__phone">
+                        <a href="tel:+79999999999" class="phone-number">+7 (999) 999 99 99</a>
+                    </div>
+                    <div class="footer__email">
+                        <a href="mailto:info@code.ru" class="email">info@code.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="footer__copyright-info">
+                <p class="footer__text">© 2023 — Все права защищены</p>
+            </div>
+            <ul class="footer__copyright-list">
+                <li class="footer__copyright-item">
+                    <a href="#!" class="footer__copyright-link footer__text">Пользовательское соглашение</a>
+                </li>
+                <li class="footer__copyright-item">
+                    <a href="#!" class="footer__copyright-link footer__text">Политика конфиденциальности</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?_v=20240324193331"></script>
+    <script src="js/app.min.js?_v=20240324193331"></script>
+</body>
+</html>
