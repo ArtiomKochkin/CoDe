@@ -176,7 +176,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="info__item info__item--img">
+                        <div class="info__item info__item--img info__item--start">
                             <img src="./img/info/teaching-method.jpg" alt="Методика обучения" class="info__img">
                         </div>
                     </div>
@@ -185,6 +185,7 @@
         </section>
 
         <!-- gallery -->
+        <!-- В полный экран использовались те же изображения, т.к. не были предоставлены изображения большего размера -->
         <section class="gallery">
             <div class="container">
                 <div class="gallery__inner">
@@ -215,26 +216,29 @@
         </div>
 
         <!-- feedback form -->
-        <div class="modal " id="form-modal"> 
+        <div class="modal" id="form-modal"> 
             <div class="container">
-                <div class="modal__content">
+                <div class="modal__content modal__content--form">
+                    <div class="modal__close">
+                        <img src="./img/svg/close.svg" alt="">
+                    </div>
                     <h3 class="modal__title title">Заказать звонок</h3>
                     <form action="/" class="modal__form form">
                         <div class="form__field">
-                            <label for="name" class="form__label">Имя</label>
-                            <input type="text" id="name" class="form__input" placeholder="Ваше имя">
+                            <label for="name" class="label">Имя</label>
+                            <input type="text" id="name" class="input" placeholder="Ваше имя">
                         </div>
                         <div class="form__field">
-                            <label for="tel" class="form__label">Телефон</label>
-                            <input type="tel" id="tel" class="form__input" placeholder="+7 ХХХ - ХХХ - ХХ - ХХ">
+                            <label for="tel" class="label">Телефон</label>
+                            <input type="tel" id="tel" class="input" placeholder="+7 ХХХ - ХХХ - ХХ - ХХ">
                         </div>
                         <div class="form__field">
-                            <label for="email" class="form__label">Имя</label>
-                            <input type="email" id="email" class="form__input" placeholder="mail@site.com">
+                            <label for="email" class="label">Имя</label>
+                            <input type="email" id="email" class="input" placeholder="mail@site.com">
                         </div>
                         <div class="form__field">
-                            <label for="message" class="form__label">Сообщение</label>
-                            <textarea id="message" class="form__input form__input--textarea" placeholder="Ваше сообщение"></textarea>
+                            <label for="message" class="label">Сообщение</label>
+                            <textarea id="message" class="input input--textarea" placeholder="Ваше сообщение"></textarea>
                         </div>
                         <div class="form__text">
                             Нажимая кнопку "Отправить", соглашаюсь с <span class="accent">политикой конфиденциальности</span>

@@ -1,14 +1,19 @@
 .footer__top {
     @include flex(normal);
-}
 
-.footer__right {
-    width: 60%;
+    @include breakpoint($tablet-pt) {
+        flex-direction: column;
+    }
 }
 
 .footer__about {
     @include flex;
     margin-bottom: 3.7rem;
+
+    @include breakpoint($tablet-pt) {
+        margin-bottom: 2.7rem;
+        justify-content: center;
+    }
 }
 
 .footer__logo {
@@ -19,11 +24,53 @@
     font-size: 1.6rem;
     line-height: 119%;
     color: $dark-gray;
+
+    @include breakpoint($mobile) {
+        font-size: 1.4rem;
+    }    
+}
+
+.footer__socials {
+    @include breakpoint($tablet-pt) {
+        justify-content: center;
+    }
 }
 
 .footer__right {
     width: 40%;
     @include flex(normal);
+
+    @include breakpoint($tablet-pt) {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+.footer__nav {
+    @include breakpoint($tablet-pt) {
+        margin: 4.7rem 0;
+
+        .nav__list {
+            align-items: center;
+        }
+
+        .nav__item {
+            margin-bottom: 2.8rem;
+        }
+    }
+
+    @include breakpoint($mobile) {
+        .nav__link {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.footer__contacts {
+    @include breakpoint($tablet-pt) {
+        text-align: center;
+    }
 }
 
 .footer__phone {
@@ -46,10 +93,26 @@
         height: 1px;
         background-color: $gray;
     }
+
+    @include breakpoint($tablet-pt) {
+        flex-direction: column;
+        margin-top: 3.5rem;
+        padding: 2.8rem 0 3rem;
+    }
+}
+
+.footer__copyright-info {
+    @include breakpoint($tablet-pt) {
+        margin-bottom: 1.6rem;
+    }
 }
 
 .footer__copyright-list {
     @include flex;
+    
+    @include breakpoint($tablet-pt) {
+        flex-direction: column;
+    }
 }
 
 .footer__copyright-item {
@@ -57,5 +120,16 @@
 
     &:last-child {
         margin: 0;
+    }
+
+    @include breakpoint($tablet-pt) {
+        margin-right: 0;
+        margin-bottom: 0.9rem;
+    }
+}
+
+.footer__copyright-link {
+    @include breakpoint($tablet-pt) {
+        color: $orange;
     }
 }

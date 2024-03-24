@@ -1,0 +1,11 @@
+.label {
+    display: block;
+    color: $black;
+    font-size: 1.6rem;
+    font-family: $medium;
+    margin-bottom: 1.6rem;
+
+    @include breakpoint($mobile) {
+        margin-bottom: 1.4rem;
+    }
+}

@@ -9,6 +9,10 @@
 
 html {
     font-size: 10px;
+    
+    @include breakpoint($tablet) {
+        font-size: 9px;
+    }
 }
 
 body {
@@ -16,6 +20,7 @@ body {
     font-size: 1.4rem;
     font-family: $regular;
     color: $dark;
+    overflow-x: hidden;
 
     &.no-scroll {
         overflow-y: hidden;
@@ -37,23 +42,39 @@ a {
 
 .container {
     @include container(1160px, 0);
+
+    @include breakpoint(1200px) {
+        @include container(1184px, 12px);
+    }
 }
 
 .phone-number {
     color: $blue;
     font-size: 1.6rem;
     line-height: 144%;
+
+    @include breakpoint($mobile) {
+        font-size: 1.8rem;
+    }
 }
 
 .email {
     font-size: 1.6rem;
     line-height: 144%;
     color: $dark;
+
+    @include breakpoint($mobile) {
+        font-size: 1.8rem;
+    }
 }
 
 .title {
     font-family: $medium;
     font-size: 4.6rem;
+
+    @include breakpoint($mobile) {
+        font-size: 2.7rem;
+    }
 }
 
 .bold {
@@ -66,11 +87,14 @@ a {
 }
 
 @import "components/button";
+@import "components/input";
+@import "components/label";
 @import "components/nav";
 @import "components/socials";
 @import "components/modal";
 @import "components/form";
 @import "components/slick-slider";
+
 @import "blocks/header";
 @import "blocks/intro";
 @import "blocks/benefits";

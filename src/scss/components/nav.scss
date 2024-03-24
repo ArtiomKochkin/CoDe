@@ -28,6 +28,10 @@
     &--hidden {
         display: none;
     }
+
+    @include breakpoint($tablet) {
+        margin-right: 4rem;
+    }
 }
 
 .nav__link {

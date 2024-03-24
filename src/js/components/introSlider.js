@@ -10,7 +10,9 @@ export default function initSlider() {
                 {
                     breakpoint: 767,
                     settings: {
-                        arrows: false
+                        arrows: false,
+                        autoplay: true,
+                        autoplaySpeed: 3000
                     }
                 }
             ]

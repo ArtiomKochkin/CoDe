@@ -7,6 +7,17 @@
     grid-template-areas: 
     "first first second third"
     "first first fourth fifth";
+
+    @include breakpoint($tablet-pt) {
+        gap: 1.3rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "first first"
+        "first first"
+        "second third"
+        "fourth fifth";
+    }
 }
 
 .gallery__item {
@@ -32,4 +43,8 @@
 .gallery__img {
     display: block;
     border-radius: 3rem;
+
+    @include breakpoint($tablet-pt) {
+        width: 100%;
+    }
 }

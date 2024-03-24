@@ -1,5 +1,9 @@
 .info {
     margin-bottom: 6rem;
+
+    @include breakpoint($tablet-pt) {
+        margin-bottom: 2.7rem;
+    }
 }
 
 .info__row {
@@ -10,6 +14,11 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @include breakpoint($tablet-pt) {
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -24,6 +33,19 @@
         grid-column: span 2;
         padding: 5.4rem 10.1rem;
         background-color: $light-gray;
+
+        @include breakpoint($tablet) {
+            padding: 4.3rem 2.3rem;
+        }
+    }
+
+    @include breakpoint($tablet-pt) {
+        grid-column: span 3;
+        width: 100%;
+
+        &--start {
+            grid-row-start: -1;
+        }
     }
 }
 
@@ -31,12 +53,21 @@
     display: block;
     border-radius: 4rem;
     height: 100%;
+
+    @include breakpoint($tablet-pt) {
+        height: auto;
+        width: 100%;
+    }
 }
 
 .info__item-title {
     font-size: 3.2rem;
     line-height: 94%;
     margin-bottom: 1.8rem;
+
+    @include breakpoint($mobile) {
+        font-size: 2.3rem;
+    }
 }
 
 .info__item-desc {
@@ -49,5 +80,9 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @include breakpoint($mobile) {
+        margin-bottom: 2rem;
     }
 }

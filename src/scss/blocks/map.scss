@@ -1,8 +1,21 @@
 .map {
     margin: 6rem 0;
+
+    @include breakpoint($tablet-pt) {
+        margin: 2.7rem 0 4.2rem;
+    }
 }
 
 .map__inner {
-    border-radius: 3rem;
-    min-height: 42.3rem;
+    height: 423px;
+
+    @include breakpoint($tablet-pt) {
+        height: 415px;
+    }
+}
+
+.ymaps-2-1-79-map  {
+    ymaps {
+        border-radius: 3rem;
+    }
 }

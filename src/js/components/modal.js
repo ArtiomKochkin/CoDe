@@ -3,6 +3,7 @@
 export default function handleModal() {
     const modalButtons = document.querySelectorAll("[data-modal]");
     const modalWindows = document.querySelectorAll(".modal");
+    const modalClose = document.querySelectorAll(".modal__close");
     const body = document.body;
 
     modalButtons.forEach(item => {
@@ -11,6 +12,13 @@ export default function handleModal() {
             let modalID = target.getAttribute("data-modal");
             let modal = document.getElementById(modalID);
             showModal(modal);
+        });
+    });
+
+    modalClose.forEach(close => {
+        close.addEventListener("click", event => {
+            let currentModal = event.currentTarget.closest(".modal");
+            closeModal(currentModal);
         });
     });
 

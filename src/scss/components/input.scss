@@ -1,0 +1,30 @@
+.input {
+    border: 1px solid $secondary-gray;
+    border-radius: 1rem;
+    padding: 2.8rem 3rem;
+    width: 100%;
+    transition: $linear;
+    font-family: $regular;
+    font-size: 1.6rem;
+    color: $black;
+    outline: none;
+
+    &::placeholder {
+        font-family: $regular;
+        font-size: 1.6rem;
+        color: $secondary-gray;
+    }
+
+    &:focus {
+        border: 1px solid $orange;
+    }
+
+    &--textarea {
+        height: 12rem;
+        resize: none;
+    }
+
+    @include breakpoint($mobile) {
+        padding: 1.8rem 1.6rem;
+    }
+}

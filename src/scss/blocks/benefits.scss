@@ -1,5 +1,9 @@
 .benefits {
     margin: 6rem 0;
+
+    @include breakpoint($tablet-pt) {
+        margin: 3.3rem 0;
+    }
 }
 
 .benefits__title {
@@ -7,22 +11,42 @@
     font-family: $semibold;
     text-align: center;
     margin: 0 auto 3.4rem;
+
+    @include breakpoint($tablet) {
+        max-width: none;
+    }
+    
+    @include breakpoint($tablet-pt) {
+        margin: 0 auto 2.7rem;
+    }
 }
 
 .benefits__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .benefits__card {
     background-color: $light-gray;
     text-align: center;
-    border-radius: 3rem;
-
+    border-radius: 3rem;    
     padding: 5rem 3.5rem 3.1rem;
     margin: 0 1.35rem 2.7rem;
-    flex: 0 22%;
+    width: 260px;
+
+    @include breakpoint($tablet) {
+        flex-grow: 1;
+    }
+    @include breakpoint($tablet-pt) {
+        width: 46%;
+        margin: 0 0.6rem 1.2rem;
+        padding: 2.7rem 1.7rem;
+    }
+    @include breakpoint($mobile) {
+        padding: 2.3rem 1rem;
+    }
 }
 
 .benefits__card-img {
@@ -33,11 +57,23 @@
 .benefits__card-title {
     font-size: 1.6rem;
     line-height: 116%;
-    margin: 1.8rem 0 1rem;
+    margin: 1.8rem auto 1rem;
+    max-width: 20rem;
+
+    @include breakpoint($mobile) {
+        max-width: none;
+        font-size: 1.4rem;
+    }
 }
 
 .benefits__card-desc {
     font-size: 1.3rem;
     line-height: 115%;
+    margin: 0 auto;
     max-width: 20rem;
+
+    @include breakpoint($mobile) {
+        font-size: 1.1rem;
+        max-width: none;
+    }
 }
